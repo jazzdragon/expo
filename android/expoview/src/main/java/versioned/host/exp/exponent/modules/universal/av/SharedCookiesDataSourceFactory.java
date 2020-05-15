@@ -13,7 +13,7 @@ public class SharedCookiesDataSourceFactory implements DataSource.Factory {
   private final DataSource.Factory mDataSourceFactory;
 
   public SharedCookiesDataSourceFactory(ReactContext reactApplicationContext, String userAgent, Map<String, Object> requestHeaders) {
-    OkHttpClient reactNativeOkHttpClient = reactApplicationContext.getNativeModule(NetworkingModule.class).mClient;
+    OkHttpClient reactNativeOkHttpClient = ((NetworkingModule) reactApplicationContext.getCatalystInstance().getNativeModule("Networking")).mClient;
     mDataSourceFactory = new DefaultDataSourceFactory(reactApplicationContext, null, new CustomHeadersOkHttpDataSourceFactory(reactNativeOkHttpClient, userAgent, requestHeaders));
   }
 
