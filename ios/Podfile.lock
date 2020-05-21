@@ -1563,14 +1563,14 @@ PODS:
   - EXFont (8.1.1):
     - UMCore
     - UMFontInterface
-  - EXGL (8.1.0):
+  - EXGL (8.2.0):
     - EXGL_CPP
     - UMCameraInterface
     - UMCore
     - UMFileSystemInterface
-  - EXGL_CPP (8.1.0):
-    - EXGL_CPP/EXGLContext (= 8.1.0)
-  - EXGL_CPP/EXGLContext (8.1.0)
+  - EXGL_CPP (8.2.0):
+    - EXGL_CPP/EXGLContext (= 8.2.0)
+  - EXGL_CPP/EXGLContext (8.2.0)
   - EXGoogleSignIn (8.1.0):
     - GoogleSignIn (~> 5.0.2)
     - UMCore
@@ -1605,6 +1605,7 @@ PODS:
     - UMCore
     - UMFileSystemInterface
   - EXMediaLibrary (8.1.0):
+    - React
     - UMCore
     - UMFileSystemInterface
     - UMPermissionsInterface
@@ -1616,12 +1617,12 @@ PODS:
   - EXPermissions (8.1.0):
     - UMCore
     - UMPermissionsInterface
-  - EXPreventScreenCapture (1.0.0):
-    - UMCore
   - EXPrint (8.1.0):
     - UMCore
     - UMFileSystemInterface
   - EXRandom (8.1.0):
+    - UMCore
+  - EXScreenCapture (1.0.0):
     - UMCore
   - EXScreenOrientation (1.0.0):
     - React-Core
@@ -2535,9 +2536,9 @@ DEPENDENCIES:
   - EXNetwork (from `../packages/expo-network/ios`)
   - EXNotifications (from `../packages/expo-notifications/ios`)
   - EXPermissions (from `../packages/expo-permissions/ios`)
-  - EXPreventScreenCapture (from `../packages/expo-prevent-screen-capture/ios`)
   - EXPrint (from `../packages/expo-print/ios`)
   - EXRandom (from `../packages/expo-random/ios`)
+  - EXScreenCapture (from `../packages/expo-screen-capture/ios`)
   - EXScreenOrientation (from `../packages/expo-screen-orientation/ios`)
   - EXSecureStore (from `../packages/expo-secure-store/ios`)
   - EXSegment (from `../packages/expo-analytics-segment/ios`)
@@ -3374,12 +3375,12 @@ EXTERNAL SOURCES:
     :path: "../packages/expo-notifications/ios"
   EXPermissions:
     :path: "../packages/expo-permissions/ios"
-  EXPreventScreenCapture:
-    :path: "../packages/expo-prevent-screen-capture/ios"
   EXPrint:
     :path: "../packages/expo-print/ios"
   EXRandom:
     :path: "../packages/expo-random/ios"
+  EXScreenCapture:
+    :path: "../packages/expo-screen-capture/ios"
   EXScreenOrientation:
     :path: "../packages/expo-screen-orientation/ios"
   EXSecureStore:
@@ -3833,8 +3834,8 @@ SPEC CHECKSUMS:
   EXFirebaseAnalytics: 535e764dcb3facfa1668d81e422b685eb93c1c9f
   EXFirebaseCore: 4e0976590135563e26af5050916879d5ee218f1b
   EXFont: b60f7a8900e3a12e7be3b2a40e19b22c7b5f89ba
-  EXGL: 7df5a1c0cd23dc7496d95889d4274448de8e21a2
-  EXGL_CPP: a70374bf147b423e4ed8dd435006581de7e3c311
+  EXGL: 41b3775eb9a9d6766abd36f9a0bf132bc05ba6e8
+  EXGL_CPP: ca6a2c8acf11d3d1fdf8fa9f858a760beaf06440
   EXGoogleSignIn: d1fcbf367429818e0ba622d236fbb7126acb510b
   EXHaptics: 013b5065946d4dd7b46ea547b58072d45a206dbd
   EXImageLoader: 5ad6896fa1ef2ee814b551873cbf7a7baccc694a
@@ -3846,13 +3847,13 @@ SPEC CHECKSUMS:
   EXLocalization: 1997068470bdfb7601fd58dbbf85ba1cde36fb82
   EXLocation: bbd487fd96a18a3ad9725389bbb94c4a5f78edf3
   EXMailComposer: 8efe254989ceace18681b98c049c6c0209d4ae56
-  EXMediaLibrary: 02a13521d05ca381b08f7d745a9602569eade072
+  EXMediaLibrary: aa151e6f6f977543c24222d57a1caad4b7facfbc
   EXNetwork: 1f9719a912524abc04d06a27a0fdf25bacdd4aad
   EXNotifications: cc5d647c15b5f00602e1c4f7244d6a3a15dd2eb6
   EXPermissions: 24b97f734ce9172d245a5be38ad9ccfcb6135964
-  EXPreventScreenCapture: d3b36ae7f2d6917785c4be0f7b4ed0148c0ed8df
   EXPrint: 44b97ce29f50e83225a1aa22808d652cf1de82db
   EXRandom: cafbaebd177d38a4c4ee514e75824245e6fc2046
+  EXScreenCapture: d001b0ba68107db27504449cacf20560a0d07ca4
   EXScreenOrientation: 44d3cd3a99a86b9cb681e742697bc2c057d7fbd2
   EXSecureStore: 7a03e21e80ae59bf8e86c55e7a400f60db2da639
   EXSegment: f2e2e08c3fd42570c7e750a2714841882c834d03
@@ -3938,4 +3939,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 529190a386115c6ed272c0477f2ee8e0ce0b7490
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.8.4
