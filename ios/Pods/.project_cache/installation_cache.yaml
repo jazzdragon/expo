@@ -7839,6 +7839,16 @@ CACHE_KEYS:
     PROJECT_NAME: EXRandom
     SPECS:
       - EXRandom (8.1.0)
+  EXScreenCapture:
+    BUILD_SETTINGS_CHECKSUM:
+      EXScreenCapture: 4f5df0029a41664228c8c2ee91887d5d
+    CHECKSUM: d001b0ba68107db27504449cacf20560a0d07ca4
+    FILES:
+      - "../../packages/expo-screen-capture/ios/EXScreenCapture/EXScreenCaptureModule.h"
+      - "../../packages/expo-screen-capture/ios/EXScreenCapture/EXScreenCaptureModule.m"
+    PROJECT_NAME: EXScreenCapture
+    SPECS:
+      - EXScreenCapture (1.0.0)
   EXScreenOrientation:
     BUILD_SETTINGS_CHECKSUM:
       EXScreenOrientation: 5909998709fdccddd02f9653688202a8
@@ -8244,16 +8254,16 @@ CACHE_KEYS:
       - nanopb/encode (0.3.9011)
   Pods-Exponent:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: d554db4ab910f3c25cbd9c86485ab0d9
-      Release: d554db4ab910f3c25cbd9c86485ab0d9
+      Debug: 104b9498ca081f2e207aff48161e3fdf
+      Release: 104b9498ca081f2e207aff48161e3fdf
   Pods-ExponentIntegrationTests:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 85b12121877a2eea100a39574bacf435
-      Release: 85b12121877a2eea100a39574bacf435
+      Debug: 84e1dc3c56a9411deb9215ab73fb7e70
+      Release: 84e1dc3c56a9411deb9215ab73fb7e70
   Pods-Tests:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 85b12121877a2eea100a39574bacf435
-      Release: 85b12121877a2eea100a39574bacf435
+      Debug: 84e1dc3c56a9411deb9215ab73fb7e70
+      Release: 84e1dc3c56a9411deb9215ab73fb7e70
   Protobuf:
     BUILD_SETTINGS_CHECKSUM:
       Protobuf: e9ec876cfd5ece357978b5d515d5282c
